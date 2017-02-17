@@ -1,4 +1,5 @@
 /* @flow */
+//https://flowtype.org/docs/five-simple-examples.html#nullable-types
 
 function total (numbers: Array<number>){
     var result = 0;
@@ -8,4 +9,4 @@ function total (numbers: Array<number>){
     return result;
 }
 
-total([1, 2, 3, 4]);
+total([1, 2, 3, 'hello']);

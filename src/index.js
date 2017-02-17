@@ -13,7 +13,7 @@ export default class HelloReact extends React.Component {
   render() {
     return (
           <div>
-            <ParentComponent />
+            <Parent />
           </div>
       );
   }
