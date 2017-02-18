@@ -1,21 +1,23 @@
-
+// @flow
 import React, {Component} from 'react';
+
 
 export class NormalCounter extends Component {
     constructor(props){
         super(props);
         this.state = {
-            value : 0
+            value : this.props.value
         }
+
         this._increment = this._increment.bind(this);
         this._decrement = this._decrement.bind(this);
     };
-    _increment (){
+    _increment (e) {
         this.setState({
             value: this.state.value + 1
         })
     }
-    _decrement (){
+    _decrement (e) {
         this.setState({
             value: this.state.value -1
         })
@@ -30,3 +32,4 @@ export class NormalCounter extends Component {
         )
     }
 }
+
