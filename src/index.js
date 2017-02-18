@@ -1,11 +1,9 @@
 import React from 'react';
 import ReactDOM  from 'react-dom';
-import {Parent} from './component/Parent';
+import {NormalCounter} from './component/ExampleCounter/NormalCounter';
+import {FlowTypedCounter} from './component/ExampleCounter/FlowTypedCounter';
 
 
-//@flow
-var str: number = 'hell world';
-console.log(str);
 export default class HelloReact extends React.Component {
   constructor(props){
     super(props);
@@ -13,7 +11,10 @@ export default class HelloReact extends React.Component {
   render() {
     return (
           <div>
-            <Parent />
+            <p>normal</p>
+            <NormalCounter />
+            <p>flowtyped</p>
+            <FlowTypedCounter />
           </div>
       );
   }
