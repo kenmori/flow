@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM  from 'react-dom';
-import {ParentComponent} from './component/ParentComponent';
+import {Parent} from './component/Parent';
 
 
 //@flow
