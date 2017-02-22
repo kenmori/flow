@@ -10,7 +10,7 @@ var nodemon = require('gulp-nodemon');
 var browserSync = require('browser-sync').create();
 
 gulp.task('apply-prod-environment', function() {
-  process.env.NODE_ENV = 'production';
+  process.env.NODE_ENV = 'development';
 });
 
 gulp.task('browserify', function() {

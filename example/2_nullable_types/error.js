@@ -1,4 +1,5 @@
 /* @flow */
+//https://flowtype.org/docs/five-simple-examples.html#nullable-types
 
 (function(){
     function length(x){
