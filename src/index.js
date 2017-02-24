@@ -12,9 +12,9 @@ export default class HelloReact extends React.Component {
     return (
           <div>
             <p>normal</p>
-            <NormalCounter />
+            <NormalCounter title='normal' visited={true} value={0} />
             <p>flowtyped</p>
-            <FlowTypedCounter />
+            <FlowTypedCounter title='typed' visited={true} value={0} />
           </div>
       );
   }

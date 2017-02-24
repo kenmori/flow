@@ -23,7 +23,7 @@ export class NormalCounter extends Component {
     render(){
         return (
             <div>
-                <button type='button' onClick={this._increment}>incrementfafa</button>
+                <button type='button' onClick={this._increment}>increment</button>
                 <button type='button' onClick={this._decrement}>decrement</button>
                 <input type='text' value={this.state.value} />
             </div>
