@@ -12,12 +12,14 @@ type State = {
     value: number
 }
 
+
+class MyComponent extends React.Component<DefaultProps, Props, State> {
+    state: State
+
+    /* ... */
+}
 export class FlowTypedCounter extends Component {
     state: State;
-    props: {
-        title: string,
-        value: number
-    }
     constructor(props: Props){
         super(props);
         this.state = {
@@ -47,3 +49,9 @@ export class FlowTypedCounter extends Component {
         )
     }
 }
+
+
+//関数を返す関数
+//たまに引数に関数を受け取るがこれは必須ではない
+//副作用がある不純な関数を作る場合使う
+//ライブラリなどの既存の振る舞いを変更したりする際に使う
