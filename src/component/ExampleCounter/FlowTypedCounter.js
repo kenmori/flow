@@ -13,11 +13,6 @@ type State = {
 }
 
 
-class MyComponent extends React.Component<DefaultProps, Props, State> {
-    state: State
-
-    /* ... */
-}
 export class FlowTypedCounter extends Component {
     state: State;
     constructor(props: Props){
@@ -29,12 +24,12 @@ export class FlowTypedCounter extends Component {
         self._increment = this._increment.bind(this);
         self._decrement = this._decrement.bind(this);
     };
-    _increment (e:any) {
+    _increment (e:Object) {
         this.setState({
             value: this.state.value + 1
         })
     }
-    _decrement (e:any) {
+    _decrement (e:Object) {
         this.setState({
             value: this.state.value -1
         })
