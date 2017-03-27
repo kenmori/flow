@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM  from 'react-dom';
 import {NormalCounter} from './component/ExampleCounter/NormalCounter';
 import {FlowTypedCounter} from './component/ExampleCounter/FlowTypedCounter';
+import Button from './component/oreilly/Button';
 
 
 export default class HelloReact extends React.Component {
@@ -11,10 +12,9 @@ export default class HelloReact extends React.Component {
   render() {
     return (
           <div>
-            <p>normal</p>
-            <NormalCounter title='normal' visited={true} value={0} />
-            <p>flowtyped</p>
-            <FlowTypedCounter title='typed' visited={true} value={0} />
+
+            <Button href="http://reactjs.com">フォローする</Button>
+            <Button className="custom" href="http://reactjs.com">フォローする</Button>
           </div>
       );
   }
